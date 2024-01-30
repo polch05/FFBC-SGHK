@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap');
+
+body {
+    background-color:palegreen;
+    /* background-image: url(/images/sample.avif); */
+    background-attachment:scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: url() bg-position bg-size bg-attachment */
+
+}
+
+.font-example {
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+}
+
+.text-alignment {
+    text-align:center;
+    font-style:italic;
+    font-size: 20px;
+    text-decoration: line-through;
+}
+
+.spacing {
+    line-height: 1.5;
+    letter-spacing: 2px;
+    border-color: black;
+    border-width: 2px;
+    border-style: dotted;
+}
+
+/* text-shadow: x-coordinate || y-coordinate || blur radius || color of the shadow */
+.shadow-sample {
+    text-shadow: 2px 5px 2px blueviolet;
+    text-transform: uppercase;
+}
+
+#box-model {
+    /* margin: 80px 40px 20px 60px; */
+    margin-top: 80px;
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    width: 150px;
+    height: 120px;
+    background-color: coral;
+    padding: 50px;
+    border: yellow double 30px;
+}
+
+/* 
+===== MARGIN & PADDING =====
+1-value = applied on all 4 sides
+2-value = top and bottom side || right and left side
+3-value = top side,  || right and left side || bottom side
+4-value = top || right || bottom || left
+*/
+
+/* 
+Border : border-width || border-style || border-color
+*/
