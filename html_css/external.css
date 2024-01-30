@@ -1,0 +1,57 @@
+/* Element Selector */
+p {
+    color: red;
+}
+
+/* Universal Selector */
+* {
+    color: violet;
+}
+
+/* Class Selector */
+.paragraph {
+    color: yellow;
+}
+
+/* ID Selector */
+#parag1 {
+    color: pink;
+}
+
+/* Attribute Selector */
+/* Targetting an <a> tag with a href attribute */
+a[href] {
+    font-size: 13px;
+    color: brown
+}
+
+/* targetting any element that has a href attribute */
+[href] {
+    font-size: 20px;
+    color: brown;
+}
+
+/* Grouping Selectors */
+h2, h3 {
+    font-size: 15px;
+}
+
+.paragraph, #parag1 {
+    color: blueviolet
+}
+
+/* Pseudo-classes */
+.hoverr:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Pseudo-element */
+h3::before {
+    content: "This should show before h3."
+}
+
+h2::first-letter {
+    color: black;
+}
+
