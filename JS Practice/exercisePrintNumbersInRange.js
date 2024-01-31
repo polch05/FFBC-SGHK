@@ -8,11 +8,12 @@ y = prompt("Please, enter an ending number: ");
 
 function printNumberRange() {
     console.log(`Let's LOOP through the numbers from ${x} to ${y}, Ready, Set, Go...`);
-
+    console.time("WhileLoop")
     while (x <= y) {
         console.log(`${x} is followed by...`);
         x++;
     }
+    console.timeEnd("WhileLoop")
 }
 
 printNumberRange();
