@@ -1,0 +1,83 @@
+
+body {
+    background-color: lightgray;
+}
+/*
+@media (width <= 600px) or (orientation: landscape) {
+    body {
+        background-color: white;
+    }
+} 
+*/
+
+@media (min-width: 300px) and (max-width: 600px) {
+    body {
+        background-color: lightpink;
+    }
+}
+
+h1 {
+    text-align: center;
+    text-wrap: balance;
+    color: blanchedalmond;
+    font: Helvetia;
+}
+
+p::first-letter {
+    color: cornflowerblue;
+    /*initial-letter: 3 3;*/
+    font-size: 3rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    height: 125px;
+    width: 125px;
+    border: 1px solid red;
+    background-color: rbg(244, 0, 0, .5);
+    align-items: center;
+}
+
+@property --scale {
+    syntax: "<number>";
+    inherits: false;
+    initial-value: 1;
+}
+
+.boxAnimation {
+    --scale: .5;
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+    transform: scale(var(--scale));
+    animation: pulse 1s alternate infinite;
+}
+
+@keyframes pulse {
+    100% {
+        --scale: 1;
+        background-color: lightgray;
+    }
+}
+
+button::before {
+    /* 
+    content: attr(data-count);
+    */
+    content: "12";
+    position: absolute;
+    top: -0.75em;
+    right: -0.75em;
+    width: 1.5em;
+    height: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+}
