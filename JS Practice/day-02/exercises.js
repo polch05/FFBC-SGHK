@@ -55,6 +55,29 @@ const result = calculateExponentWithLoop(2, 5); // result will be 32
 console.log("Calculate POW with for loop for 2, 5: " + result);
 
 
+/*
+let base = prompt("Enter the base number: ");
+let exponent = prompt("Enter the exponent: ");
+let result = 1;
+
+for (let i = 0; i < exponent; i++) {
+  result *= base;
+}
+
+console.log(result);*/
+/* Example with While Loop
+I used while loop.
+
+function powerCalculate(base, exponent) {
+  while (exponent > 0){
+    let result = base**
+    exponent--;
+    return result;
+  }
+}
+
+console.log(powerCalculate(4, 4));
+ */
 
 
 function calcExponent(base, exponent) {
@@ -63,6 +86,7 @@ function calcExponent(base, exponent) {
 
 const calcResult = calcExponent(3, 3);
 console.log("%c Math.pow Result for 3, 3: " + calcResult, `background:linear-gradient(#E66465, #9198E5); padding: .3rem; color:white; border-radius: .5em`);
+
 
 // FizzBuzz
 function printNum1to100() {
@@ -107,4 +131,5 @@ function findLargestNumber(arr) {
 
 const something = findLargestNumberMathMax(numberArray);
 console.log(something);
+
 console.log(numberArray.length);
